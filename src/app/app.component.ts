@@ -12,7 +12,7 @@ import { Component } from '@angular/core'
       </div>
       <div fxLayout="row">
         <div fxFlex></div>
-        <mat-card fxFlex="400px" style="margin:2em; width:300px">
+        <mat-card fxFlex="250px" style="margin:2em; width:250px">
           <mat-card-header>
             <mat-card-title><div class="mat-title">Current Weather</div></mat-card-title>
           </mat-card-header>
@@ -23,7 +23,6 @@ import { Component } from '@angular/core'
         <div fxFlex></div>
       </div>
   `,
-
 })
 export class AppComponent {
   title = 'localcast-weather'
