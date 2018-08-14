@@ -13,7 +13,7 @@ describe('CurrentWeatherComponent', () => {
     TestBed.configureTestingModule({
       declarations: [CurrentWeatherComponent],
       providers: [{ provide: WeatherService, useClass: WeatherServiceFake }],
-      imports: [MaterialModule, NoopAnimationsModule]
+      imports: [MaterialModule, NoopAnimationsModule],
     }).compileComponents()
   }))
 
