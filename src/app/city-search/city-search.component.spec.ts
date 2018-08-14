@@ -13,7 +13,7 @@ describe('CitySearchComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [CitySearchComponent],
-      providers: [{ provide: WeatherService, useClass: WeatherServiceFake}],
+      providers: [{ provide: WeatherService, useClass: WeatherServiceFake }],
       imports: [FormsModule, ReactiveFormsModule, MaterialModule, NoopAnimationsModule],
     }).compileComponents()
   }))

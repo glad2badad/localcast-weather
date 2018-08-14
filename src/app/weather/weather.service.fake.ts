@@ -15,11 +15,16 @@ export class WeatherServiceFake implements IWeatherService {
 
   currentWeather = new BehaviorSubject<ICurrentWeather>(this.fakeWeather)
 
-  public getCurrentWeather(city: string | number, country?: string): Observable<ICurrentWeather> {
+  public getCurrentWeather(
+    city: string | number,
+    country?: string
+  ): Observable<ICurrentWeather> {
     return of(this.fakeWeather)
   }
 
   public updateCurrentWeather(search: string | number, country?: string) {
-    this.getCurrentWeather(search, country).subscribe(weather => this.currentWeather.next(weather))
+    this.getCurrentWeather(search, country).subscribe(weather =>
+      this.currentWeather.next(weather)
+    )
   }
 }
